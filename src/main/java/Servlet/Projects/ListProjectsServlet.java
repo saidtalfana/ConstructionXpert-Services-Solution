@@ -26,7 +26,7 @@ public class ListProjectsServlet extends HttpServlet {
         try {
             List<Project> listProjects = projectDao.selectAllProjects();
             request.setAttribute("listProjects", listProjects);
-            request.getRequestDispatcher("/WEB-INF/Projects/listProjects.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/listProjects.jsp").forward(request, response);
         } catch (SQLException e) {
             throw new ServletException("Error retrieving projects", e);
         }

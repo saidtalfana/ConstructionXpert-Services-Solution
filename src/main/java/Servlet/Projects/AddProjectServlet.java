@@ -23,7 +23,7 @@ public class AddProjectServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/Projects/addProject.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/addProject.jsp").forward(request, response);
     }
 
     @Override

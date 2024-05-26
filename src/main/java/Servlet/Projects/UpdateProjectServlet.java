@@ -28,7 +28,7 @@ public class UpdateProjectServlet extends HttpServlet {
         try {
             Project existingProject = projectDao.selectProjectById(id);
             request.setAttribute("project", existingProject);
-            request.getRequestDispatcher("/WEB-INF/Projects/UpdateProject.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/UpdateProject.jsp").forward(request, response);
         } catch (SQLException e) {
             throw new ServletException("Error retrieving project", e);
         }
