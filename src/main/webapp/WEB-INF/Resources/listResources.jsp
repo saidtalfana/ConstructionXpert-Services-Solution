@@ -206,16 +206,18 @@
         .btn_edit{
             color: white;
             background-color: #097b11;
-            padding: 3px 5px;
-            border-radius: 3px;
+            padding: 1px 5px;
+            border-radius: 1px;
+            text-decoration: none;
 
 
         }
         .btn_delete{
             color: white;
             background-color: #f00f0f;
-            padding: 3px 5px;
-            border-radius: 3px;
+            padding: 1px 5px;
+            border-radius: 1px;
+            text-decoration: none;
 
         }
 
@@ -228,6 +230,7 @@
         }
         table #tr  {
             background-color: #5f5e5e;
+
 
         }
 
@@ -299,9 +302,9 @@
                             <td>${resource.type}</td>
                             <td>${resource.quantity}</td>
                             <td>${resource.provider}</td>
-                            <td> <a href="${pageContext.request.contextPath}/UpdateResourceServlet?resourceId=${resource.resourceId}&taskId=${resource.taskId}" class="update-button">Update</a>
+                            <td> <a href="${pageContext.request.contextPath}/UpdateResourceServlet?resourceId=${resource.resourceId}&taskId=${resource.taskId}" class="btn_edit">Update</a>
                             </td>
-                            <td>        <a href="${pageContext.request.contextPath}/DeleteResourceServlet?resourceId=${resource.resourceId}&taskId=${resource.taskId}" class="delete-button">Delete</a>
+                            <td>        <a href="${pageContext.request.contextPath}/DeleteResourceServlet?resourceId=${resource.resourceId}&taskId=${resource.taskId}" class="btn_delete">Delete</a>
                             </td>
                         </tr>
                     </c:forEach>
