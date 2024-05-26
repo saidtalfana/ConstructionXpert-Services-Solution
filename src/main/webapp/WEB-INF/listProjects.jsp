@@ -129,7 +129,7 @@
       align-items: center;
     }
 
-    .card_left>h1,
+    .card_left>h4,
     span {
       color: white;
     }
@@ -189,7 +189,7 @@
       <c:forEach var="project" items="${listProjects}">
         <div class="card">
           <div class="card_left">
-            <h1>${project.name}</h1>
+            <h4>${project.name}</h4>
             <span>${project.startDate}</span>
             <span>${project.endDate}</span>
             <h3 id="budget">${project.budget} <span>$</span></h3>
